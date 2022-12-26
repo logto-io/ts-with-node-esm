@@ -1,0 +1,18 @@
+{  
+  "compilerOptions": {
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "outDir": "lib",
+    "declaration": true,
+    "types": ["node"],
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "module": "esnext"
+  },
+  "include": [
+    "src"
+  ],
+}

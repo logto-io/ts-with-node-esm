@@ -1,0 +1,24 @@
+{
+  "name": "@silverhand/ts-with-node-esm-sample",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The sample project.",
+  "type": "module",
+  "scripts": {
+    "start": "pnpm build && node lib/index.js",
+    "build": "tsc -p tsconfig.build.json",
+    "build:test": "tsc -p tsconfig.test.json --sourcemap",
+    "test:only": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "pnpm build:test && pnpm test:only",
+    "test:coverage": "pnpm run test --coverage"
+  },
+  "author": "Silverhand Inc. <contact@silverhand.io>",
+  "devDependencies": {
+    "@jest/globals": "^29.3.1",
+    "@silverhand/esm-helper": "workspace:*",
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.17",
+    "jest": "^29.3.1",
+    "typescript": "^4.9.4"
+  }
+}
